@@ -1,14 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    tools:context="com.islavstan.customviewexample.MainActivity">
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
 
-   <com.islavstan.customviewexample.ValueSelector
+ <!--  <com.islavstan.customviewexample.ValueBar
+       android:id="@+id/valueBar"
+       android:padding="24dp"
        android:layout_width="match_parent"
-       android:layout_height="80dp"
-       android:id="@+id/valueSelector"/>
+       android:layout_height="wrap_content"
+       custom:barHeight="@dimen/value_bar_barHeight"
+       custom:baseColor="@color/navy"
+       custom:circleRadius="@dimen/value_bar_circleRadius"
+       custom:spaceAfterBar="@dimen/value_bar_spaceAfterBar"
+       custom:circleTextColor="@color/white"
+       custom:circleTextSize="@dimen/value_bar_circleTextSize"
+       custom:fillColor="@color/red"
+       custom:labelText="value"
+       custom:labelTextColor="@color/navy"
+       custom:labelTextSize="@dimen/value_bar_labelTextSize"
+       custom:maxValueTextColor="@color/navy"
+       custom:maxValueTextSize="@dimen/value_bar_maxValueTextSize"/>-->
 
 
-</RelativeLayout>
+
+
+
+
+   <com.islavstan.customviewexample.LovelyView
+       android:id="@+id/custView"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_margin="5dp"
+       custom:circleColor="#ff0099"
+       custom:circleLabel="Hello"
+       custom:labelColor="#ffff66" />
+</LinearLayout>
