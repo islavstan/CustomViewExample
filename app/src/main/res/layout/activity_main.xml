@@ -3,35 +3,24 @@
     android:layout_width="match_parent"
     xmlns:custom="http://schemas.android.com/apk/res-auto">
 
- <!--  <com.islavstan.customviewexample.ValueBar
-       android:id="@+id/valueBar"
-       android:padding="24dp"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       custom:barHeight="@dimen/value_bar_barHeight"
-       custom:baseColor="@color/navy"
-       custom:circleRadius="@dimen/value_bar_circleRadius"
-       custom:spaceAfterBar="@dimen/value_bar_spaceAfterBar"
-       custom:circleTextColor="@color/white"
-       custom:circleTextSize="@dimen/value_bar_circleTextSize"
-       custom:fillColor="@color/red"
-       custom:labelText="value"
-       custom:labelTextColor="@color/navy"
-       custom:labelTextSize="@dimen/value_bar_labelTextSize"
-       custom:maxValueTextColor="@color/navy"
-       custom:maxValueTextSize="@dimen/value_bar_maxValueTextSize"/>-->
+    <com.islavstan.customviewexample.SwagPoints
+        xmlns:swagpoints="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/seekbar_point"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_gravity="center"
+        android:padding="64dp"
+        swagpoints:max="1000"
+        swagpoints:min="100"
+        swagpoints:step="100"
+        swagpoints:textColor="#CC11EE"
+        swagpoints:textSize="36sp"
+        swagpoints:progressColor="@color/color_progress"
+        swagpoints:progressWidth="12dp"
+        swagpoints:arcColor="@color/color_arc"
+        swagpoints:arcWidth="8dp"
+        swagpoints:indicatorIcon="@drawable/indicator"
+        android:background="@color/colorPrimary"
+        />
 
-
-
-
-
-
-   <com.islavstan.customviewexample.LovelyView
-       android:id="@+id/custView"
-       android:layout_width="fill_parent"
-       android:layout_height="fill_parent"
-       android:layout_margin="5dp"
-       custom:circleColor="#ff0099"
-       custom:circleLabel="Hello"
-       custom:labelColor="#ffff66" />
 </LinearLayout>

@@ -15,4 +15,7 @@
     <color name="blue">#0000FF</color>
     <color name="navy">#354361</color>
     <color name="black">#000000</color>
+    <color name="color_arc">#4CAF50</color>
+    <color name="color_progress">#A5D6A7</color>
+    <color name="color_text">#E8F5E9</color>
 </resources>
